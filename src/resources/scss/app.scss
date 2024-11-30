@@ -1,0 +1,8 @@
+//chỉ viết css ở app.scss ở resources chứ không viết ở public
+@import 'variables';
+h1 {
+    color: $primary-color;
+}
+h2 {
+    color: $primary-color;
+}
