@@ -2,10 +2,9 @@
   "name": "blog",
   "version": "1.0.0",
   "main": "src/index.js",
-
   "scripts": {
-    "beautiful":"lint-staged",
-    "watch":"sass --watch src/resources/scss/app.scss/ src/public/css/app.css",
+    "beautiful": "lint-staged",
+    "watch": "sass --watch src/resources/scss/app.scss/ src/public/css/app.css",
     "start": "nodemon --inspect src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -29,17 +28,16 @@
   "lint-staged": {
     "src/**/*.{js,jsoon,scss}": "prettier --single-quote --trailing-comma all --tab-width 4 --write"
   },
-
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
     }
-
   },
   "description": "",
   "dependencies": {
     "express": "^4.21.1",
-    "express-handlebars": "^8.0.1"
+    "express-handlebars": "^8.0.1",
+    "mongoose": "^8.8.3"
   },
   "devDependencies": {
     "morgan": "^1.10.0",

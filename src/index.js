@@ -7,6 +7,10 @@ const app = express();
 const port = 3000;
 
 const route = require('./routes');
+const db = require('.config/db');
+//Connect to db
+db.connect();
+
 
 app.use(
     express.urlencoded({
@@ -30,7 +34,7 @@ app.engine(
     }),
 );
 
-          app.set('view engine', 'hbs');
+app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, 'resources\\views')); //Cài đặt thư mục chứa các tệp templater
 
 //Routes init
