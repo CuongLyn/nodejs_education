@@ -1,8 +1,16 @@
 //chỉ viết css ở app.scss ở resources chứ không viết ở public
 @import 'variables';
-h1 {
-    color: $primary-color;
+
+.card-course-item{
+    margin-top: 16px;
 }
-h2 {
-    color: $primary-color;
+.user-avater{
+    width: 28px;
+    height: 28px;
+    margin-right: 4px;
+    border-radius: 50%;
 }
+.mt-4.d-flex {
+    gap: 1rem; /* Tạo khoảng cách giữa các thành phần, tùy chỉnh giá trị */
+  }
+  
